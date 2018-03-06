@@ -14,6 +14,7 @@
 		FD675D69204F363F007A2618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD675D67204F363F007A2618 /* LaunchScreen.storyboard */; };
 		FD675D74204F363F007A2618 /* screenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD675D73204F363F007A2618 /* screenTests.swift */; };
 		FD675D7F204F363F007A2618 /* screenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD675D7E204F363F007A2618 /* screenUITests.swift */; };
+		FD675D8D204F4CAF007A2618 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD675D8C204F4CAF007A2618 /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FD675D7A204F363F007A2618 /* screenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = screenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD675D7E204F363F007A2618 /* screenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screenUITests.swift; sourceTree = "<group>"; };
 		FD675D80204F363F007A2618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD675D8C204F4CAF007A2618 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				FD675D5E204F363F007A2618 /* AppDelegate.swift */,
 				FD675D60204F363F007A2618 /* ViewController.swift */,
+				FD675D8C204F4CAF007A2618 /* CameraController.swift */,
 				FD675D62204F363F007A2618 /* Main.storyboard */,
 				FD675D65204F363F007A2618 /* Assets.xcassets */,
 				FD675D67204F363F007A2618 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD675D8D204F4CAF007A2618 /* CameraController.swift in Sources */,
 				FD675D61204F363F007A2618 /* ViewController.swift in Sources */,
 				FD675D5F204F363F007A2618 /* AppDelegate.swift in Sources */,
 			);
@@ -427,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35H4MHLESW;
 				INFOPLIST_FILE = screen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ugowe.screen;
@@ -441,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35H4MHLESW;
 				INFOPLIST_FILE = screen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ugowe.screen;
