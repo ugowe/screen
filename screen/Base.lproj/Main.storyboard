@@ -29,6 +29,9 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="Flash Off Icon"/>
+                                        <connections>
+                                            <action selector="toggleFlash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lha-i9-ABa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT8-mf-zBY">
                                         <rect key="frame" x="315" y="60" width="44" height="44"/>
@@ -40,6 +43,9 @@
                                         <state key="normal" image="Rear Camera Icon">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="switchCameras:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qB-LK-PIe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gu6-fS-T7j">
                                         <rect key="frame" x="16" y="543" width="44" height="44"/>
@@ -83,6 +89,9 @@
                                     <constraint firstAttribute="width" constant="55" id="oqm-uK-8Fp"/>
                                     <constraint firstAttribute="height" constant="55" id="xgH-ym-IHE"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="captureImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZK5-pb-g8w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,6 +107,7 @@
                     </view>
                     <connections>
                         <outlet property="captureButton" destination="Z22-NT-iNr" id="BSN-CM-tP7"/>
+                        <outlet property="capturePreviewView" destination="FV9-5y-7b9" id="ym5-wz-4UY"/>
                         <outlet property="photoModeButton" destination="Gu6-fS-T7j" id="ab6-ez-RoC"/>
                         <outlet property="toggleCameraButton" destination="CT8-mf-zBY" id="3wo-yH-zvY"/>
                         <outlet property="toggleFlashButton" destination="vdH-Yh-8FA" id="V7n-vg-b0h"/>
@@ -108,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="7kq-j1-wOq">
             <objects>
-                <viewController id="avX-Gj-O69" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoVC" id="avX-Gj-O69" customClass="PhotoViewController" customModule="screen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EsV-by-wb6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,11 +137,17 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="goBack:" destination="avX-Gj-O69" eventType="touchUpInside" id="Cep-nW-97Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="S9K-fh-n2d"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="hYA-m6-rrp" id="Dlm-cZ-EXl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gp4-NO-4Op" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

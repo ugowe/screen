@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A77507832051006400299BAF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77507822051006400299BAF /* PhotoViewController.swift */; };
 		FD675D5F204F363F007A2618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD675D5E204F363F007A2618 /* AppDelegate.swift */; };
 		FD675D61204F363F007A2618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD675D60204F363F007A2618 /* ViewController.swift */; };
 		FD675D64204F363F007A2618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD675D62204F363F007A2618 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A77507822051006400299BAF /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		FD675D5B204F363F007A2618 /* screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = screen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD675D5E204F363F007A2618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD675D60204F363F007A2618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				FD675D5E204F363F007A2618 /* AppDelegate.swift */,
 				FD675D60204F363F007A2618 /* ViewController.swift */,
 				FD675D8C204F4CAF007A2618 /* CameraController.swift */,
+				A77507822051006400299BAF /* PhotoViewController.swift */,
 				FD675D62204F363F007A2618 /* Main.storyboard */,
 				FD675D65204F363F007A2618 /* Assets.xcassets */,
 				FD675D67204F363F007A2618 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD675D8D204F4CAF007A2618 /* CameraController.swift in Sources */,
+				A77507832051006400299BAF /* PhotoViewController.swift in Sources */,
 				FD675D61204F363F007A2618 /* ViewController.swift in Sources */,
 				FD675D5F204F363F007A2618 /* AppDelegate.swift in Sources */,
 			);
